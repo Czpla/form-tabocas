@@ -73,7 +73,7 @@ body {
 }
 
 .confirm {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100%;
     background-color: #8AC04B;
     border: none;
@@ -84,6 +84,9 @@ body {
     color: #fff;
     font-size: 1.1em;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .confirm i {
@@ -93,4 +96,37 @@ body {
 .confirm:hover {
     transition: 1s;
     background-color: #89c04bb4;
+}
+
+@media (max-width: 545px) {
+    .container-center {
+        width: 450px;
+    }
+    .information {
+        width: 430px;
+    }
+}
+
+@media (max-width: 490px) {
+    .container-center {
+        width: 400px;
+    }
+    .information {
+        width: 380px;
+    }
+    .logo img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-center {
+        width: 350px;
+    }
+    .information {
+        width: 340px;
+    }
+    .logo img {
+        width: 280px;
+    }
 }
