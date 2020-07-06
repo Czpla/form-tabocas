@@ -18,40 +18,55 @@
         <p>Para fazer a solicitação de acesso a internet favor preencher todos os dados do formulário e aguardar o contato do técnico.</p>
     </div>
     <div class="container-center">
-        <div class="title">
-            <span>Nome</span>
-        </div>
-        <div class="input">
-            <i class="fas fa-1x fa-user"></i>
-            <input type="text" placeholder="Digite seu Nome...">
-        </div>
-        <div class="title">
-            <span>E-mail</span>
-        </div>
-        <div class="input">
-            <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Digite seu E-mail...">
-        </div>
-        <div class="title">
-            <span>Setor</span>
-        </div>
-        <div class="input">
-            <i class="fas fa-briefcase"></i>
-            <input type="text" placeholder="Digite seu Setor...">
-        </div>
-        <div class="title">
-            <span>Encarregado</span>
-        </div>
-        <div class="input">
-            <i class="fas fa-hard-hat"></i>
-            <input type="text" placeholder="Digite seu Encarregado...">
-        </div>
-        <button class="confirm"><i class="fas fa-check"></i><span>Confirmar</span></button>
+        <form name="register" action="success.html" method="post">
+            <div class="title">
+                <span>Nome</span>
+            </div>
+            <div class="input-box">
+                <div class="input">
+                    <i class="fas fa-1x fa-user"></i>
+                    <input type="text" required placeholder="Digite seu Nome...">
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="title">
+                <span>E-mail</span>
+            </div>
+            <div class="input-box">
+                <div class="input">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" required placeholder="Digite seu E-mail...">
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="title">
+                <span>Setor</span>
+            </div>
+            <div class="input-box">
+                <div class="input">
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" required placeholder="Digite seu Setor...">
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="title">
+                <span>Encarregado</span>
+            </div>
+            <div class="input-box">
+                <div class="input">
+                    <i class="fas fa-hard-hat"></i>
+                    <input type="text" required placeholder="Digite seu Encarregado...">
+                </div>
+                <span class="error"></span>
+            </div>
+            <button type="submit" class="confirm"><i class="fas fa-check"></i><span>Confirmar</span></button>
+        </form>
     </div>
     <footer>
         <a href="mailto:eduardo.senkiw@tabocas.com.br">eduardo.senkiw@tabocas.com.br</a>
     </footer>
 
+    <script src="./js/formValidation.js"></script>
     <script src="./js/getmac.js"></script>
 </body>
 

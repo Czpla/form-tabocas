@@ -37,7 +37,6 @@ body {
 .container-center {
     margin: 0 auto 56px auto;
     max-width: 500px;
-    height: 520px;
     background-color: #fff;
     box-shadow: 0 0 0.8em rgb(223, 222, 222);
     border-radius: 8px;
@@ -45,19 +44,32 @@ body {
 }
 
 .title {
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.1em;
     font-weight: 400;
     color: rgb(114, 114, 116);
+    display: inline-block;
 }
 
 .input {
     background-color: rgb(238, 238, 238);
     height: 45px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     border-radius: 8px;
-    margin-bottom: 20px;
+    border: solid 1px transparent;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: firebrick;
+    font-weight: 200;
+    font-size: 0.8em;
 }
 
 .input input {
