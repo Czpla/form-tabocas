@@ -1,6 +1,5 @@
 const fields = document.querySelectorAll('[required]')
 
-
 function validateField(field) {
 
     function verifyErrors() {
@@ -72,7 +71,7 @@ for (field of fields) {
     field.addEventListener('blur', customValidation)
 }
 
-document.querySelector('form').addEventListener('submit', event => {
-    console.log('formulario enviado!')
-    event.preventDefault()
-})
+// document.querySelector('form').addEventListener('submit', event => {
+//     console.log('formulario enviado!')
+//     event.preventDefault()
+// })
