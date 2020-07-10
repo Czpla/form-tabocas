@@ -5,6 +5,6 @@ module.exports = {
     entry: './src/input.js',
     output: {
         filename: 'input.js',
-        path: __dirname + '/public'
+        path: __dirname + '/js'
     }
 }
